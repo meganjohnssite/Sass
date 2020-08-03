@@ -1,0 +1,35 @@
+@mixin spacing {
+    padding: 10px;
+    margin: 5px;
+}
+@mixin center{
+    text-align: center;
+}
+
+$listColor: #F4B266;
+$headerStyle: italic;
+
+body{
+    background-color:#DCEDFF;
+}
+h2{
+    color: #8f91a2;
+    font-style: $headerStyle;
+    @include center;
+}
+
+.Section1{
+    @include spacing;
+}
+
+.Section2{
+    @include spacing;
+}
+
+.Section3{
+    @include spacing;
+}
+ul{
+    list-style-type: square;
+    color: $listColor;
+}
